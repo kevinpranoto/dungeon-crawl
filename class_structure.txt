@@ -1,0 +1,23 @@
+Arena will have a 2D array of Tile
+Arena object will have a play() function
+play() function contains a while loop that terminates when the player wins, loses, or quits
+play() calls print_arena() after every input
+
+Tile will contain trap, enemy, player
+
+Hazard is a virtual class that will be derived by traps and enemies
+
+Hazard will trigger lose state
+enemies move
+traps are hidden
+
+player can move around the arena
+player is a boolean property of tile that can be activated
+
+test 1:
+Arena construction, print_arena() // test 1 is successful, onto test 2
+
+test 2:
+Placing traps (not hidden) onto the Arena
+
+todo: how to erase terminal and reprint 
