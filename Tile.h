@@ -2,23 +2,28 @@ class Tile
 {
 private:
     bool empty;
+    bool isTrap;
 public:
     Tile()
-    :empty(true)
+    :empty(true), isTrap(false)
     {
     }
 
     Tile( Tile & t)
-    :empty(true)
+    :empty(t.empty), isTrap(t.isTrap)
     {
     }
-
+    void set_trap()
+    {
+        empty = false;
+        isTrap = true;
+    }
     void print(ostream & out)
     {
         if (empty)
             out << "- ";
-        else 
-            out << "  ";
+        if (isTrap)
+            out << "V ";
     }
     Tile & operator = (Tile & t)
     {

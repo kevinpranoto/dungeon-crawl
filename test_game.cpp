@@ -4,6 +4,6 @@ using namespace std;
 int main()
 {
     Arena ar(15,15);
-    Arena.place_traps(3);
+    ar.place_traps(5);
     cout << ar << endl;
 }
