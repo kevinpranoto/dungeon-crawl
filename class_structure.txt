@@ -14,10 +14,13 @@ traps are hidden
 player can move around the arena
 player is a boolean property of tile that can be activated
 
+the menu, use a while loop with getline(cin, var_to_store)
+
 test 1:
 Arena construction, print_arena() // test 1 is successful, onto test 2
 
 test 2:
 Placing traps (not hidden) onto the Arena
+Arena.place_traps(number of traps) will place a number of traps randomly in the arena
 
 todo: how to erase terminal and reprint 
